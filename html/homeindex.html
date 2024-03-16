@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WebXR AR View</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="images/logo.svg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../css/mainstyle.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body onload="myLoader()" style="margin:0;">
+  <div class="loading" id="loader">
+  <div class="load">
+  <div class="loader">
+  </div>
+  </div>
+  </div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a class="logo">WebXR-AR</a>
+      <a href="#team">Team</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+      <a href="" class="active">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </header>
+  <div id="navbar">
+    <div class="slide-menu">
+      <a class="logo">WebXR-AR</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+      <a href="" class="active">Home</a>
+    </div>
+  </div>
+
+  <div class="main" style="background-image: linear-gradient(to right bottom, rgb(0, 0, 196), rgb(103, 103, 255)); height: 90vh">
+    <table>
+      <tr>
+        <td>
+          <section>
+            <h5 class="sub-title">The world of augmented reality</h5>
+            <h1 class="title">Welcome to Augmented Reality View</h1>
+            <p>We bring you carefully-curated interior design ideas, to give your home a brand new look. Explore exclusive
+              interior designs and trends that are every bit inspirational as they are practical. Our team of interior
+              designers have put together ideas across kitchen, bedroom, living room and more, to help you pick a design
+              that will best suit your home interior requirements.</p>
+            <a href="./accesseries.html" class="btn1">View in AR</a>
+          </section>
+        </td>
+        <td>
+          <img src="../assets/Ar main.png" class="inline-photo show-on-scroll" alt="INFERNO">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <section class="section0" id="sections">
+    <div class="card banner">
+      <h1 class="title">Feature of AR</h1>
+      <h5 class="sub-title">We bring you carefully-curated interior design ideas, to give your home a brand new look.</h5>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fa fa-clock-o"></i>
+      <h3>Real-time Interaction</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fa fa-object-group"></i>
+      <h3>Object Recognition</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fa-solid fa-hands"></i>
+      <h3>Gesture Recognition</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fa fa-globe"></i>
+      <h3>Environmental Understanding</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fa fa-map-marker"></i>
+      <h3>Location-based Services</h3>
+    </div>
+  </section>
+
+
+  <!--CONTAINER-->
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          <img src="https://i.ibb.co/w4dySWD/01.webp" class="inline-photo show-on-scroll" alt="About Us">
+        </td>
+        <td>
+          <h6 class="sub-title">Discover Our Work</h6>
+          <h1 class="title">AR Interior Decoration</h1>
+          <p>Augmented Reality (AR) Virtual Interior Decoration is a technology-driven approach to interior design that utilizes augmented reality to enhance the visualization and customization of interior spaces. Here's a brief overview of how it works and its benefits:
+          </p>
+          <p>Visualization: AR allows users to overlay virtual furniture, decor, and design elements onto a real-world environment through the camera view of a smartphone, tablet, or AR-enabled device. This enables users to see how different items would look and fit within their space before making any purchases or committing to a design.
+
+            Customization: Users can experiment with various combinations of furniture, colors, textures, and layouts to customize their interiors according to their preferences and style. This level of customization helps users make informed decisions about design choices and ensures that the final result aligns with their vision.
+            
+            Realistic Rendering: Advanced AR technology provides high-quality, realistic rendering of virtual objects within the physical environment. This realism helps users accurately assess how different design elements will interact with lighting, spatial constraints, and existing decor.
+            
+            Saves Time and Money: By allowing users to virtually try out different design options without the need for physical prototypes or multiple store visits, AR virtual interior decoration saves both time and money. Users can quickly iterate through design ideas, compare prices, and make informed purchasing decisions from the comfort of their own homes. 
+           </p>
+          <a href="#moreaboutus" class="btn2">Discover More</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+<section class="slick" id="moreaboutus">
+<div class="banner">
+	<h1 class="title">How AR Can Benifit You </h1>
+	<h5 class="sub-title">Explore exclusive interior designs and trends that are every bit inspirational as they are practical.</h5>
+	</div>
+	<table>
+	<tr>
+		<td>
+		<ul>
+		<li>
+		<h3>Customizable Furniture Catalog:</h3>
+		<p>Offer a diverse range of virtual furniture options from various styles, brands, and designers, allowing users to select pieces that suit their taste and preferences.
+    </p>
+		</li>
+		<li>
+		<h3>Texture and Material Customization:</h3>
+		<p>Enable users to customize the texture, color, and material of furniture items and decor elements to match their existing interior design or desired aesthetic. 
+    </p>
+		</li>
+		<li>
+		<h3>Room Layout Customization:</h3>
+		<p>Provide tools for users to adjust the layout of their virtual rooms, including wall placements, window and door positions, and room dimensions, ensuring accurate representation of their physical space. 
+    </p>
+		</li>
+		</ul>
+		</td>
+		<td>
+		<div class="card inline-photo show-on-scroll">
+        <div class="card_part card_part-one">
+        </div>
+         <div class="card_part card_part-two">
+       </div>
+
+       <div class="card_part card_part-three">
+       </div>
+
+       <div class="card_part card_part-four">
+       </div>
+       </div>
+		</td>
+		<td>
+		<ul>
+		<li>
+		<h3>
+     
+      Place Virtual Objects in AR:</h3>
+		<p>Activate the AR mode and demonstrate how users can place virtual furniture and decor items within the physical environment using markerless tracking and surface detection</p>
+		</li>
+		<li>
+		<h3>Multi-platform Deployment:</h3>
+		<p>Ensure compatibility across a wide range of AR-enabled devices and platforms, including smartphones, tablets, AR glasses, and web browsers, to maximize accessibility and user engagement across different user demographics and preferences. 
+    </p>
+		</li>
+		<li>
+		<h3>Real-World Product Integration:</h3>
+		<p>If the solution integrates with real-world products, demonstrate how users can visualize and place actual products from partnering retailers within the virtual space.
+    </p>
+		</li>
+		</ul>
+		</td>
+	</tr>
+	</table>
+	</section>
+	
+	
+
+	
+	
+	
+    <footer style="background-image: linear-gradient(to right bottom, rgb(0, 0, 196), rgb(103, 103, 255))">
+      <div class="footer">
+        <section>
+          <p><a class="logo">WebXR-AR</a></p>
+          <p>We bring you carefully-curated interior design ideas, to give your home a brand new look.</p>
+        </section>
+
+        <section>
+        <p class="title">OTHER LINKS</p>
+        <p><a href="#">AR</a></p>
+        <p><a href="#">Terms & Conditions</a></p>
+        <p><a href="#">Cookie Policy</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        </section>
+
+        <section>
+        <p class="title">SHORT CUT</p>
+        <p><a href="#">Contact Us</a></p>
+        <p><a href="#">Services</a></p>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Our Fields</a></p>
+        </section>
+      </div>
+
+    </footer>
+  <script  src="../javascript/script.js"></script>
+</body>
+</html>

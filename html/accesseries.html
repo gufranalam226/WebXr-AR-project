@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap" rel="stylesheet">  
+
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- three.js -->
+    <script src="https://unpkg.com/three@0.126.0/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+     <!-- Reset Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../shared/app.css">
+    <script src="../shared/utils.js"></script>
+    <link rel="stylesheet" href="../css/mainstyle.css">
+</head>
+<body>
+    <!-- <div class="loading" id="loader">
+        <div class="load">
+        <div class="loader">
+        </div>
+        </div>
+        </div>
+        <div style="display:none;" id="myDiv" class="animate-bottom"> -->
+    
+    <main class="wrapper" style="background-image: linear-gradient(to right bottom, rgb(0, 0, 196), rgb(103, 103, 255));">
+        <div class="topnav" id="myTopnav">
+            <a class="logo">WebXR-AR</a>
+            <a href="#team">Team</a>
+            <a href="/MAHESHBYL/details/mdOmWZG">Contact</a>
+            <a href="about.html">About</a>
+            <a href="" class="active">Home</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+        </header>
+        <div id="unsupported-info" class="mdc-card demo-card">
+            <h2>Unsupported Browser</h2>
+        </div>
+        <section class="container">
+            <section class="img__container">
+                <figure class="img__item">
+                    <img src="../model_image/chair/chair.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('chair')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent" >
+                                    Start AR 
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 1 -->
+                <figure class="img__item">
+                    <img src="../model_image/drawer_cabinet/drawer_cabinet.png" alt="img" class="img__img"> 
+                    <figcaption class="img__description" onclick="imgName('drawer_cabinet')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 2 -->
+                <figure class="img__item">
+                    <img src="../model_image/dressing_table/dressing_table.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('dressing_table')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 3 -->
+                <figure class="img__item">
+                    <img src="../model_image/dressing_table_with_mirror/dressing_table_with_mirror.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('dressing_table_with_mirror')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 4 -->
+                <figure class="img__item">
+                    <img src="../model_image/fan/fan.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('fan')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 5 -->
+                <figure class="img__item">
+                    <img src="../model_image/flower_pot/flower_pot.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('flower_pot')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/kcdf-white_porcelain_jar/kcdf-white_porcelain_jar.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('kcdf-white_porcelain_jar')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/office_chair/office_chair.png" alt="img" class="img__img" >
+                    <figcaption class="img__description" onclick="imgName('office_chair')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/ornate_mirror/ornate_mirror.png" alt="img" class="img__img" >
+                    <figcaption class="img__description" onclick="imgName('ornate_mirror')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/sofa_chair/sofa_chair.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('sofa_chair')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/brush_holder/brush_holder.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('brush_holder')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/wall_mirror/wall_mirror.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('wall_mirror')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/fan/fan.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('drawer_cabinet')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/fan/fan.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('drawer_cabinet')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/fan/fan.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('drawer_cabinet')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/fan/fan.png" alt="img" class="img__img">
+                    <figcaption class="img__description" onclick="imgName('drawer_cabinet')">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+                <figure class="img__item">
+                    <img src="../model_image/fan/fan.png" alt="img" class="img__img" onclick="imgName('drawer_cabinet')">
+                    <figcaption class="img__description">
+                        <div class="img__text">
+                            <p class="img__title">
+                                <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
+                                    Start AR
+                                </a>
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure> <!-- End img 6 -->
+            </section>
+        </section>
+    </main>
+    <div id="stabilization"></div>
+
+        
+
+    <script src="../index.js"></script>
+</body>
+</html>
